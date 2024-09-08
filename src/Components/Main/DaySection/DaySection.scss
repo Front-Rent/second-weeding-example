@@ -1,0 +1,67 @@
+.day-section {
+  width: 480px;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+
+  & > h2 {
+    font-size: 40px;
+    font-family: "Vrdzagir", sans-serif;
+    font-weight: 300;
+  }
+
+  &-mont {
+    width: 100%;
+
+    &-words {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+
+      & > span {
+        font-size: 24px;
+      }
+    }
+
+    &-numbers {
+      width: 100%;
+      margin-top: 20px;
+      position: relative;
+
+      & > img {
+        width: 90%;
+      }
+
+      &-sirt {
+        position: absolute;
+        width: 130px;
+        top: 15px;
+        left: 279px;
+        z-index: 999;
+        animation: sirt 4s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+
+        & > img {
+          z-index: 999;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes sirt {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}

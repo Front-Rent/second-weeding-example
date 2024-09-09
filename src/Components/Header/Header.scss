@@ -6,6 +6,7 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
+
   &-img {
     width: 480px;
     height: 637px;
@@ -14,18 +15,53 @@
     object-fit: cover;
     background-image: url("../../assets/Imgs/zuygeri\ nkarneric.jpg");
   }
+
   & > h1 {
     position: absolute;
     color: white;
-    top: 330px;
+    top: 25%;
     font-size: 70px;
     text-align: center;
     font-weight: 300;
     font-family: "Dzeragir", sans-serif;
   }
+
   & > p {
     font-size: 30px;
     color: #000;
     margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 80vh;
+    &-img {
+      width: 360px;
+      height: 477px;
+    }
+    & > h1 {
+      font-size: 50px;
+    }
+    & > p {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 70vh;
+    &-img {
+      width: 280px;
+      height: 377px;
+    }
+    & > h1 {
+      font-size: 40px;
+      top: 20%;
+    }
+    & > p {
+      font-size: 20px;
+    }
   }
 }

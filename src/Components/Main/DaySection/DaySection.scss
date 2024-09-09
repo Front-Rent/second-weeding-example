@@ -43,7 +43,6 @@
         top: 15px;
         left: 279px;
         z-index: 999;
-        animation: sirt 4s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
 
         & > img {
           z-index: 999;
@@ -54,14 +53,61 @@
   }
 }
 
-@keyframes sirt {
-  0% {
-    transform: scale(0.8);
+/* Responsive Design */
+@media (max-width: 768px) {
+  .day-section {
+    width: 360px;
+    height: 400px;
+
+    & > h2 {
+      font-size: 30px;
+    }
+
+    &-mont {
+      &-words {
+        gap: 15px;
+
+        & > span {
+          font-size: 20px;
+        }
+      }
+
+      &-numbers {
+        &-sirt {
+          width: 100px;
+          top: 10px;
+          left: 200px;
+        }
+      }
+    }
   }
-  50% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0.8);
+}
+
+@media (max-width: 480px) {
+  .day-section {
+    width: 280px;
+    height: 300px;
+
+    & > h2 {
+      font-size: 24px;
+    }
+
+    &-mont {
+      &-words {
+        gap: 10px;
+
+        & > span {
+          font-size: 16px;
+        }
+      }
+
+      &-numbers {
+        &-sirt {
+          width: 80px;
+          top: 5px;
+          left: 150px;
+        }
+      }
+    }
   }
 }

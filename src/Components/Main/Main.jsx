@@ -1,6 +1,7 @@
 import DaySection from "./DaySection/DaySection";
 import PlanSection from "./PlanSection/PlanSection";
 import MapsSection from "./MapsSection/MapsSection";
+import CounterSection from "./CounterSection/CounterSection";
 
 import "./Main.scss";
 
@@ -10,6 +11,7 @@ const Main = () => {
       <DaySection />
       <PlanSection />
       <MapsSection />
+      <CounterSection />
     </main>
   );
 };

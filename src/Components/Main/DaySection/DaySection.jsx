@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+
 import amis from "../../../assets/Imgs/amsatver.png";
 import sirt from "../../../assets/Imgs/sirt.png";
+
 import "./DaySection.scss";
 
 const DaySection = () => {

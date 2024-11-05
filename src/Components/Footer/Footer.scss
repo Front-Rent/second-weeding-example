@@ -1,178 +1,69 @@
-form {
+:root {
+  --color: white;
+}
+
+.footer {
   width: 100%;
-  height: 90vh;
+  background-color: black;
+  padding: 5%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   justify-content: center;
-  gap: 50px;
-  h2 {
-    font-family: "Dzeragir", sans-serif;
-    font-size: 35px;
-    font-weight: 200;
+  align-items: center;
+  position: relative;
+  top: 80px;
+  flex-direction: column;
+
+  &-logo {
+    width: 240px;
   }
 
-  .footer-name,
-  .footer-guests {
+  &-title {
+    font-family: "Freesans";
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    text-align: center;
+    color: var(--color);
+  }
+
+  &-cont {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: start;
-    gap: 30px;
-    &:nth-child(2) {
-      position: relative;
-      left: -50px;
-    }
-    h3 {
-      font-family: "Dzeragir", sans-serif;
-      font-size: 30px;
+    align-items: center;
+
+    &-logo {
+      width: 70px;
     }
 
-    input {
-      background: transparent;
-      border: none;
-      font-family: "Vrdzagir", sans-serif;
-      font-size: 25px;
-      color: black;
-      padding-bottom: 10px;
-      border-bottom: 1px solid gray;
-      outline: none;
+    &-title {
+      font-size: 20px;
+      font-family: sans-serif;
+      font-weight: 600;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      text-align: center;
+      color: var(--color);
     }
   }
 
-  .footer-agare {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-
-    label {
-      font-size: 18px;
-      color: #333;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-
-      font-family: "Vrdzagir", sans-serif;
-
-      input[type="radio"] {
-        accent-color: #000;
-        margin-right: 10px;
-        transform: scale(1.2);
-      }
-
-      &:hover {
-        color: #000;
-      }
-    }
+  &-text {
+    font-family: "Freesans";
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 1.7;
+    color: var(--color);
   }
 
-  & > button {
-    background-color: transparent;
-    padding: 15px 30px;
-    font-size: 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    color: black;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  form {
-    width: 80%;
-    gap: 40px;
-
-    h2 {
-      font-size: 30px;
-    }
-
-    .footer-name,
-    .footer-guests {
-      gap: 25px;
-
-      h3 {
-        font-size: 25px;
-      }
-
-      input {
-        font-size: 22px;
-      }
-    }
-
-    .footer-agare label {
-      font-size: 16px;
-    }
-
-    & > button {
-      font-size: 18px;
-      padding: 12px 25px;
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  form {
-    width: 90%;
-    gap: 30px;
-
-    h2 {
-      font-size: 28px;
-    }
-
-    .footer-name,
-    .footer-guests {
-      gap: 20px;
-
-      h3 {
-        font-size: 22px;
-      }
-
-      input {
-        font-size: 20px;
-      }
-    }
-
-    .footer-agare label {
-      font-size: 14px;
-    }
-
-    & > button {
-      font-size: 16px;
-      padding: 10px 20px;
-    }
-  }
-}
-
-@media screen and (max-width: 480px) {
-  form {
-    width: 100%;
-    gap: 20px;
-
-    h2 {
-      font-size: 24px;
-    }
-
-    .footer-name,
-    .footer-guests {
-      gap: 15px;
-
-      h3 {
-        font-size: 20px;
-      }
-
-      input {
-        font-size: 18px;
-      }
-    }
-
-    .footer-agare label {
-      font-size: 12px;
-    }
-
-    & > button {
-      font-size: 14px;
-      padding: 8px 16px;
-    }
+  &-email {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 2;
+    color: var(--color);
   }
 }

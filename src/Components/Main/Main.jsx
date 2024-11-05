@@ -1,9 +1,9 @@
 import DaySection from "./DaySection/DaySection";
 import PlanSection from "./PlanSection/PlanSection";
 import MapsSection from "./MapsSection/MapsSection";
-import CounterSection from "./CounterSection/CounterSection";
 
 import "./Main.scss";
+import CounterSection from "./DaySection/CounterSection/CounterSection";
 
 const Main = () => {
   return (

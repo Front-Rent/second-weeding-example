@@ -69,6 +69,7 @@ const MapsSection = () => {
         }}
         transition={{ duration: 0.5, delay: 0.4 }}
         onClick={() => handleToggleMap("ekexeci")}
+        style={{ color: "white" }}
       >
         Սուրբ Աստվածածին Եկեղեցի
       </motion.button>
@@ -110,6 +111,7 @@ const MapsSection = () => {
         }}
         transition={{ duration: 0.5, delay: 0.8 }}
         onClick={() => handleToggleMap("restoran")}
+        style={{ color: "white" }}
       >
         Astafyan Hall Resturant
       </motion.button>

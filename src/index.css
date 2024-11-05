@@ -25,3 +25,7 @@ dl {
   font-family: "Vrdzagir";
   src: url("./Fonts/fonts/fonter.am_vrdznagir/Vrdznagir.otf");
 }
+
+body {
+  overflow-x: hidden;
+}
